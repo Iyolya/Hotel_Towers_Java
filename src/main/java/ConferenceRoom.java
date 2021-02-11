@@ -8,4 +8,10 @@ public class ConferenceRoom extends Room {
         super(guests, roomType);
         this.name = name;
     }
+
+    public String getName(){
+        return this.name;
+    }
+
+
 }
