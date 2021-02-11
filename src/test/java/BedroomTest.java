@@ -25,4 +25,15 @@ public class BedroomTest {
         assertEquals(1, bedroom.getGuest());
     }
 
+    @Test
+    public void canRemoveGuest(){
+        bedroom.removeGuest(guest);
+        assertEquals(0, bedroom.getGuest());
+    }
+
+    @Test
+    public void canFindCapacity(){
+        assertEquals(3, bedroom.getCapacity());
+    }
+
 }
